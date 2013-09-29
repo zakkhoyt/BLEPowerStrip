@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6095AC517F8F1B30008CFB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6095AC417F8F1B30008CFB4 /* Foundation.framework */; };
+		C6095AC717F8F1B30008CFB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6095AC617F8F1B30008CFB4 /* CoreGraphics.framework */; };
+		C6095AC917F8F1B30008CFB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6095AC817F8F1B30008CFB4 /* UIKit.framework */; };
+		C6095ACF17F8F1B30008CFB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6095ACD17F8F1B30008CFB4 /* InfoPlist.strings */; };
+		C6095AD117F8F1B30008CFB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6095AD017F8F1B30008CFB4 /* main.m */; };
+		C6095AD517F8F1B30008CFB4 /* VWWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6095AD417F8F1B30008CFB4 /* VWWAppDelegate.m */; };
+		C6095AD817F8F1B30008CFB4 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6095AD617F8F1B30008CFB4 /* Main_iPhone.storyboard */; };
+		C6095ADB17F8F1B30008CFB4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6095AD917F8F1B30008CFB4 /* Main_iPad.storyboard */; };
+		C6095ADE17F8F1B30008CFB4 /* VWWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6095ADD17F8F1B30008CFB4 /* VWWViewController.m */; };
+		C6095AE017F8F1B30008CFB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6095ADF17F8F1B30008CFB4 /* Images.xcassets */; };
+		C6095AE717F8F1B30008CFB4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6095AE617F8F1B30008CFB4 /* XCTest.framework */; };
+		C6095AE817F8F1B30008CFB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6095AC417F8F1B30008CFB4 /* Foundation.framework */; };
+		C6095AE917F8F1B30008CFB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6095AC817F8F1B30008CFB4 /* UIKit.framework */; };
+		C6095AF117F8F1B30008CFB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6095AEF17F8F1B30008CFB4 /* InfoPlist.strings */; };
+		C6095AF317F8F1B30008CFB4 /* BLEPowerStripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6095AF217F8F1B30008CFB4 /* BLEPowerStripTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6095AEA17F8F1B30008CFB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6095AB917F8F1B30008CFB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6095AC017F8F1B30008CFB4;
+			remoteInfo = BLEPowerStrip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C6095AC117F8F1B30008CFB4 /* BLEPowerStrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEPowerStrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6095AC417F8F1B30008CFB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C6095AC617F8F1B30008CFB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C6095AC817F8F1B30008CFB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C6095ACC17F8F1B30008CFB4 /* BLEPowerStrip-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLEPowerStrip-Info.plist"; sourceTree = "<group>"; };
+		C6095ACE17F8F1B30008CFB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C6095AD017F8F1B30008CFB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C6095AD217F8F1B30008CFB4 /* BLEPowerStrip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLEPowerStrip-Prefix.pch"; sourceTree = "<group>"; };
+		C6095AD317F8F1B30008CFB4 /* VWWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VWWAppDelegate.h; sourceTree = "<group>"; };
+		C6095AD417F8F1B30008CFB4 /* VWWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWWAppDelegate.m; sourceTree = "<group>"; };
+		C6095AD717F8F1B30008CFB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		C6095ADA17F8F1B30008CFB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		C6095ADC17F8F1B30008CFB4 /* VWWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VWWViewController.h; sourceTree = "<group>"; };
+		C6095ADD17F8F1B30008CFB4 /* VWWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWWViewController.m; sourceTree = "<group>"; };
+		C6095ADF17F8F1B30008CFB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C6095AE517F8F1B30008CFB4 /* BLEPowerStripTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEPowerStripTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6095AE617F8F1B30008CFB4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C6095AEE17F8F1B30008CFB4 /* BLEPowerStripTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLEPowerStripTests-Info.plist"; sourceTree = "<group>"; };
+		C6095AF017F8F1B30008CFB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C6095AF217F8F1B30008CFB4 /* BLEPowerStripTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEPowerStripTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6095ABE17F8F1B30008CFB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6095AC717F8F1B30008CFB4 /* CoreGraphics.framework in Frameworks */,
+				C6095AC917F8F1B30008CFB4 /* UIKit.framework in Frameworks */,
+				C6095AC517F8F1B30008CFB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6095AE217F8F1B30008CFB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6095AE717F8F1B30008CFB4 /* XCTest.framework in Frameworks */,
+				C6095AE917F8F1B30008CFB4 /* UIKit.framework in Frameworks */,
+				C6095AE817F8F1B30008CFB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6095AB817F8F1B30008CFB4 = {
+			isa = PBXGroup;
+			children = (
+				C6095ACA17F8F1B30008CFB4 /* BLEPowerStrip */,
+				C6095AEC17F8F1B30008CFB4 /* BLEPowerStripTests */,
+				C6095AC317F8F1B30008CFB4 /* Frameworks */,
+				C6095AC217F8F1B30008CFB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6095AC217F8F1B30008CFB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6095AC117F8F1B30008CFB4 /* BLEPowerStrip.app */,
+				C6095AE517F8F1B30008CFB4 /* BLEPowerStripTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6095AC317F8F1B30008CFB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6095AC417F8F1B30008CFB4 /* Foundation.framework */,
+				C6095AC617F8F1B30008CFB4 /* CoreGraphics.framework */,
+				C6095AC817F8F1B30008CFB4 /* UIKit.framework */,
+				C6095AE617F8F1B30008CFB4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6095ACA17F8F1B30008CFB4 /* BLEPowerStrip */ = {
+			isa = PBXGroup;
+			children = (
+				C6095AD317F8F1B30008CFB4 /* VWWAppDelegate.h */,
+				C6095AD417F8F1B30008CFB4 /* VWWAppDelegate.m */,
+				C6095AD617F8F1B30008CFB4 /* Main_iPhone.storyboard */,
+				C6095AD917F8F1B30008CFB4 /* Main_iPad.storyboard */,
+				C6095ADC17F8F1B30008CFB4 /* VWWViewController.h */,
+				C6095ADD17F8F1B30008CFB4 /* VWWViewController.m */,
+				C6095ADF17F8F1B30008CFB4 /* Images.xcassets */,
+				C6095ACB17F8F1B30008CFB4 /* Supporting Files */,
+			);
+			path = BLEPowerStrip;
+			sourceTree = "<group>";
+		};
+		C6095ACB17F8F1B30008CFB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6095ACC17F8F1B30008CFB4 /* BLEPowerStrip-Info.plist */,
+				C6095ACD17F8F1B30008CFB4 /* InfoPlist.strings */,
+				C6095AD017F8F1B30008CFB4 /* main.m */,
+				C6095AD217F8F1B30008CFB4 /* BLEPowerStrip-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6095AEC17F8F1B30008CFB4 /* BLEPowerStripTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6095AF217F8F1B30008CFB4 /* BLEPowerStripTests.m */,
+				C6095AED17F8F1B30008CFB4 /* Supporting Files */,
+			);
+			path = BLEPowerStripTests;
+			sourceTree = "<group>";
+		};
+		C6095AED17F8F1B30008CFB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6095AEE17F8F1B30008CFB4 /* BLEPowerStripTests-Info.plist */,
+				C6095AEF17F8F1B30008CFB4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6095AC017F8F1B30008CFB4 /* BLEPowerStrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6095AF617F8F1B30008CFB4 /* Build configuration list for PBXNativeTarget "BLEPowerStrip" */;
+			buildPhases = (
+				C6095ABD17F8F1B30008CFB4 /* Sources */,
+				C6095ABE17F8F1B30008CFB4 /* Frameworks */,
+				C6095ABF17F8F1B30008CFB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLEPowerStrip;
+			productName = BLEPowerStrip;
+			productReference = C6095AC117F8F1B30008CFB4 /* BLEPowerStrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6095AE417F8F1B30008CFB4 /* BLEPowerStripTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6095AF917F8F1B30008CFB4 /* Build configuration list for PBXNativeTarget "BLEPowerStripTests" */;
+			buildPhases = (
+				C6095AE117F8F1B30008CFB4 /* Sources */,
+				C6095AE217F8F1B30008CFB4 /* Frameworks */,
+				C6095AE317F8F1B30008CFB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6095AEB17F8F1B30008CFB4 /* PBXTargetDependency */,
+			);
+			name = BLEPowerStripTests;
+			productName = BLEPowerStripTests;
+			productReference = C6095AE517F8F1B30008CFB4 /* BLEPowerStripTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6095AB917F8F1B30008CFB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VWW;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Zakk Hoyt";
+				TargetAttributes = {
+					C6095AE417F8F1B30008CFB4 = {
+						TestTargetID = C6095AC017F8F1B30008CFB4;
+					};
+				};
+			};
+			buildConfigurationList = C6095ABC17F8F1B30008CFB4 /* Build configuration list for PBXProject "BLEPowerStrip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6095AB817F8F1B30008CFB4;
+			productRefGroup = C6095AC217F8F1B30008CFB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6095AC017F8F1B30008CFB4 /* BLEPowerStrip */,
+				C6095AE417F8F1B30008CFB4 /* BLEPowerStripTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6095ABF17F8F1B30008CFB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6095ADB17F8F1B30008CFB4 /* Main_iPad.storyboard in Resources */,
+				C6095AE017F8F1B30008CFB4 /* Images.xcassets in Resources */,
+				C6095AD817F8F1B30008CFB4 /* Main_iPhone.storyboard in Resources */,
+				C6095ACF17F8F1B30008CFB4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6095AE317F8F1B30008CFB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6095AF117F8F1B30008CFB4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6095ABD17F8F1B30008CFB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6095ADE17F8F1B30008CFB4 /* VWWViewController.m in Sources */,
+				C6095AD117F8F1B30008CFB4 /* main.m in Sources */,
+				C6095AD517F8F1B30008CFB4 /* VWWAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6095AE117F8F1B30008CFB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6095AF317F8F1B30008CFB4 /* BLEPowerStripTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6095AEB17F8F1B30008CFB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6095AC017F8F1B30008CFB4 /* BLEPowerStrip */;
+			targetProxy = C6095AEA17F8F1B30008CFB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6095ACD17F8F1B30008CFB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6095ACE17F8F1B30008CFB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C6095AD617F8F1B30008CFB4 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6095AD717F8F1B30008CFB4 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C6095AD917F8F1B30008CFB4 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6095ADA17F8F1B30008CFB4 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C6095AEF17F8F1B30008CFB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6095AF017F8F1B30008CFB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6095AF417F8F1B30008CFB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6095AF517F8F1B30008CFB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6095AF717F8F1B30008CFB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLEPowerStrip/BLEPowerStrip-Prefix.pch";
+				INFOPLIST_FILE = "BLEPowerStrip/BLEPowerStrip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C6095AF817F8F1B30008CFB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLEPowerStrip/BLEPowerStrip-Prefix.pch";
+				INFOPLIST_FILE = "BLEPowerStrip/BLEPowerStrip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C6095AFA17F8F1B30008CFB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BLEPowerStrip.app/BLEPowerStrip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLEPowerStrip/BLEPowerStrip-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BLEPowerStripTests/BLEPowerStripTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C6095AFB17F8F1B30008CFB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BLEPowerStrip.app/BLEPowerStrip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLEPowerStrip/BLEPowerStrip-Prefix.pch";
+				INFOPLIST_FILE = "BLEPowerStripTests/BLEPowerStripTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6095ABC17F8F1B30008CFB4 /* Build configuration list for PBXProject "BLEPowerStrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6095AF417F8F1B30008CFB4 /* Debug */,
+				C6095AF517F8F1B30008CFB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6095AF617F8F1B30008CFB4 /* Build configuration list for PBXNativeTarget "BLEPowerStrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6095AF717F8F1B30008CFB4 /* Debug */,
+				C6095AF817F8F1B30008CFB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C6095AF917F8F1B30008CFB4 /* Build configuration list for PBXNativeTarget "BLEPowerStripTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6095AFA17F8F1B30008CFB4 /* Debug */,
+				C6095AFB17F8F1B30008CFB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6095AB917F8F1B30008CFB4 /* Project object */;
+}
