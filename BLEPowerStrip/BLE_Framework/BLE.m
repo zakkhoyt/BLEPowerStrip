@@ -180,7 +180,7 @@ static int rssi = 0;
 {
     if (self.CM.state != CBCentralManagerStatePoweredOn) {
         printf("CoreBluetooth not correctly initialized !\r\n");
-        printf("State = %d (%s)\r\n", self.CM.state,[self centralManagerStateToString:self.CM.state]);
+        printf("State = %d (%s)\r\n", (int)self.CM.state,[self centralManagerStateToString:self.CM.state]);
         return -1;
     }
     
@@ -240,7 +240,7 @@ static int rssi = 0;
 {
     [self.CM stopScan];
     printf("Stopped Scanning\r\n");
-    printf("Known peripherals : %d\r\n",[self.peripherals count]);
+    printf("Known peripherals : %d\r\n", (unsigned int)[self.peripherals count]);
     [self printKnownPeripherals];
 }
 
@@ -425,7 +425,7 @@ static int rssi = 0;
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central
 {
 #if TARGET_OS_IPHONE
-    printf("Status of CoreBluetooth central manager changed %d (%s)\r\n",central.state,[self centralManagerStateToString:central.state]);
+    printf("Status of CoreBluetooth central manager changed %d (%s)\r\n", (int)central.state,[self centralManagerStateToString:central.state]);
 #else
     [self isLECapableHardware];
 #endif
@@ -549,7 +549,7 @@ static bool done = false;
     {
         if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@BLE_DEVICE_RX_UUID]])
         {
-            data_len = characteristic.value.length;
+            data_len = (int)characteristic.value.length;
             [characteristic.value getBytes:data length:data_len];
             
             if (data_len == 20)
@@ -576,7 +576,7 @@ static bool done = false;
         }
         else if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@BLE_DEVICE_VENDOR_NAME_UUID]])
         {
-            data_len = characteristic.value.length;
+            data_len = (int)characteristic.value.length;
             [characteristic.value getBytes:vendor_name length:data_len];
 //            NSLog(@"Vendor: %s", vendor_name);
         }
