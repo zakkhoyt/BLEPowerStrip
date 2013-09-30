@@ -22,6 +22,8 @@
 		C6095AE917F8F1B30008CFB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6095AC817F8F1B30008CFB4 /* UIKit.framework */; };
 		C6095AF117F8F1B30008CFB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6095AEF17F8F1B30008CFB4 /* InfoPlist.strings */; };
 		C6095AF317F8F1B30008CFB4 /* BLEPowerStripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6095AF217F8F1B30008CFB4 /* BLEPowerStripTests.m */; };
+		C6095B6A17F8F9260008CFB4 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = C6095AFE17F8F21B0008CFB4 /* BLE.m */; };
+		C6095B6C17F8F9660008CFB4 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6095B6B17F8F9660008CFB4 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		C6095AEE17F8F1B30008CFB4 /* BLEPowerStripTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLEPowerStripTests-Info.plist"; sourceTree = "<group>"; };
 		C6095AF017F8F1B30008CFB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C6095AF217F8F1B30008CFB4 /* BLEPowerStripTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEPowerStripTests.m; sourceTree = "<group>"; };
+		C6095AFD17F8F21B0008CFB4 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		C6095AFE17F8F21B0008CFB4 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		C6095AFF17F8F21B0008CFB4 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		C6095B6B17F8F9660008CFB4 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6095B6C17F8F9660008CFB4 /* CoreBluetooth.framework in Frameworks */,
 				C6095AC717F8F1B30008CFB4 /* CoreGraphics.framework in Frameworks */,
 				C6095AC917F8F1B30008CFB4 /* UIKit.framework in Frameworks */,
 				C6095AC517F8F1B30008CFB4 /* Foundation.framework in Frameworks */,
@@ -103,6 +110,7 @@
 		C6095AC317F8F1B30008CFB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6095B6B17F8F9660008CFB4 /* CoreBluetooth.framework */,
 				C6095AC417F8F1B30008CFB4 /* Foundation.framework */,
 				C6095AC617F8F1B30008CFB4 /* CoreGraphics.framework */,
 				C6095AC817F8F1B30008CFB4 /* UIKit.framework */,
@@ -114,6 +122,8 @@
 		C6095ACA17F8F1B30008CFB4 /* BLEPowerStrip */ = {
 			isa = PBXGroup;
 			children = (
+				C6095AFC17F8F21B0008CFB4 /* BLE_Framework */,
+				C6095B0017F8F21B0008CFB4 /* Images */,
 				C6095AD317F8F1B30008CFB4 /* VWWAppDelegate.h */,
 				C6095AD417F8F1B30008CFB4 /* VWWAppDelegate.m */,
 				C6095AD617F8F1B30008CFB4 /* Main_iPhone.storyboard */,
@@ -153,6 +163,25 @@
 				C6095AEF17F8F1B30008CFB4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6095AFC17F8F21B0008CFB4 /* BLE_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C6095AFD17F8F21B0008CFB4 /* BLE.h */,
+				C6095AFE17F8F21B0008CFB4 /* BLE.m */,
+				C6095AFF17F8F21B0008CFB4 /* BLEDefines.h */,
+			);
+			name = BLE_Framework;
+			path = ../../BLEPowerStrip_/BLEPowerStrip/BLE_Framework;
+			sourceTree = "<group>";
+		};
+		C6095B0017F8F21B0008CFB4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			path = ../../BLEPowerStrip_/BLEPowerStrip/Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +286,7 @@
 				C6095ADE17F8F1B30008CFB4 /* VWWViewController.m in Sources */,
 				C6095AD117F8F1B30008CFB4 /* main.m in Sources */,
 				C6095AD517F8F1B30008CFB4 /* VWWAppDelegate.m in Sources */,
+				C6095B6A17F8F9260008CFB4 /* BLE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +426,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BLEPowerStrip/BLEPowerStrip-Prefix.pch";
 				INFOPLIST_FILE = "BLEPowerStrip/BLEPowerStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -409,6 +440,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BLEPowerStrip/BLEPowerStrip-Prefix.pch";
 				INFOPLIST_FILE = "BLEPowerStrip/BLEPowerStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
