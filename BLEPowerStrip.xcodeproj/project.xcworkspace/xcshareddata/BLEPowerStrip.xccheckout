@@ -10,6 +10,8 @@
 	<string>BLEPowerStrip</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>1FC6E27E-CBF9-43CE-BD03-F3A8052C0617</key>
+		<string>ssh://github.com/jivadevoe/NSTimer-Blocks.git</string>
 		<key>AF8657B1-D24F-44B9-A0CE-FB2B5C3E6E08</key>
 		<string>ssh://github.com/zakkhoyt/BLEPowerStrip.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>BLEPowerStrip.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>1FC6E27E-CBF9-43CE-BD03-F3A8052C0617</key>
+		<string>../../BLEPowerStrip/ThirdParty/NSTimer-Blocks</string>
 		<key>AF8657B1-D24F-44B9-A0CE-FB2B5C3E6E08</key>
 		<string>../..</string>
 	</dict>
@@ -35,6 +39,14 @@
 			<string>AF8657B1-D24F-44B9-A0CE-FB2B5C3E6E08</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BLEPowerStrip</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1FC6E27E-CBF9-43CE-BD03-F3A8052C0617</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NSTimer-Blocks</string>
 		</dict>
 	</array>
 </dict>

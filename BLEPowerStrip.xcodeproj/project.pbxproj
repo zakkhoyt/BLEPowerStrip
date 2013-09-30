@@ -26,6 +26,10 @@
 		C6183BC317F90FF40039F452 /* VWWPowerStripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6183BC217F90FF40039F452 /* VWWPowerStripViewController.m */; };
 		C6183BC617F910070039F452 /* VWWConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6183BC517F910070039F452 /* VWWConnectViewController.m */; };
 		C6183BCB17F9105A0039F452 /* VWWBLEController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6183BCA17F9105A0039F452 /* VWWBLEController.m */; };
+		C6183BD017F9141C0039F452 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C6183BCF17F9141C0039F452 /* MBProgressHUD.m */; };
+		C6183BD517F9184A0039F452 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C6183BD317F9184A0039F452 /* NSTimer+Blocks.m */; };
+		C6183BD617F9184A0039F452 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C6183BD417F9184A0039F452 /* README.md */; };
+		C6183BDA17F9261D0039F452 /* VWWPowerStripTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6183BD917F9261D0039F452 /* VWWPowerStripTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,14 @@
 		C6183BC517F910070039F452 /* VWWConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWConnectViewController.m; sourceTree = "<group>"; };
 		C6183BC917F9105A0039F452 /* VWWBLEController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWBLEController.h; sourceTree = "<group>"; };
 		C6183BCA17F9105A0039F452 /* VWWBLEController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWBLEController.m; sourceTree = "<group>"; };
+		C6183BCE17F9141C0039F452 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		C6183BCF17F9141C0039F452 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		C6183BD217F9184A0039F452 /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Blocks.h"; sourceTree = "<group>"; };
+		C6183BD317F9184A0039F452 /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Blocks.m"; sourceTree = "<group>"; };
+		C6183BD417F9184A0039F452 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		C6183BD817F9261D0039F452 /* VWWPowerStripTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWPowerStripTableViewCell.h; sourceTree = "<group>"; };
+		C6183BD917F9261D0039F452 /* VWWPowerStripTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWPowerStripTableViewCell.m; sourceTree = "<group>"; };
+		C6183BDB17F928790039F452 /* VWWPowerStripKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VWWPowerStripKeys.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,10 +141,11 @@
 		C6095ACA17F8F1B30008CFB4 /* BLEPowerStrip */ = {
 			isa = PBXGroup;
 			children = (
-				C6183BC817F9102B0039F452 /* User Interface */,
 				C6183BC717F910110039F452 /* Controllers */,
 				C6095ADF17F8F1B30008CFB4 /* Images.xcassets */,
 				C6095ACB17F8F1B30008CFB4 /* Supporting Files */,
+				C6183BCC17F9141C0039F452 /* ThirdParty */,
+				C6183BC817F9102B0039F452 /* User Interface */,
 			);
 			path = BLEPowerStrip;
 			sourceTree = "<group>";
@@ -146,6 +159,7 @@
 				C6095ACD17F8F1B30008CFB4 /* InfoPlist.strings */,
 				C6095AD017F8F1B30008CFB4 /* main.m */,
 				C6095AD217F8F1B30008CFB4 /* BLEPowerStrip-Prefix.pch */,
+				C6183BDB17F928790039F452 /* VWWPowerStripKeys.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -182,6 +196,7 @@
 		C6183BC717F910110039F452 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C6183BD717F9260A0039F452 /* Cell */,
 				C6183BC117F90FF40039F452 /* VWWPowerStripViewController.h */,
 				C6183BC217F90FF40039F452 /* VWWPowerStripViewController.m */,
 				C6183BC417F910070039F452 /* VWWConnectViewController.h */,
@@ -199,6 +214,43 @@
 				C6095AD917F8F1B30008CFB4 /* Main_iPad.storyboard */,
 			);
 			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		C6183BCC17F9141C0039F452 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				C6183BD117F9184A0039F452 /* NSTimer-Blocks */,
+				C6183BCD17F9141C0039F452 /* MBProgressHUD */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		C6183BCD17F9141C0039F452 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C6183BCE17F9141C0039F452 /* MBProgressHUD.h */,
+				C6183BCF17F9141C0039F452 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		C6183BD117F9184A0039F452 /* NSTimer-Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				C6183BD217F9184A0039F452 /* NSTimer+Blocks.h */,
+				C6183BD317F9184A0039F452 /* NSTimer+Blocks.m */,
+				C6183BD417F9184A0039F452 /* README.md */,
+			);
+			path = "NSTimer-Blocks";
+			sourceTree = "<group>";
+		};
+		C6183BD717F9260A0039F452 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C6183BD817F9261D0039F452 /* VWWPowerStripTableViewCell.h */,
+				C6183BD917F9261D0039F452 /* VWWPowerStripTableViewCell.m */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +332,7 @@
 			files = (
 				C6095ADB17F8F1B30008CFB4 /* Main_iPad.storyboard in Resources */,
 				C6095AE017F8F1B30008CFB4 /* Images.xcassets in Resources */,
+				C6183BD617F9184A0039F452 /* README.md in Resources */,
 				C6095AD817F8F1B30008CFB4 /* Main_iPhone.storyboard in Resources */,
 				C6095ACF17F8F1B30008CFB4 /* InfoPlist.strings in Resources */,
 			);
@@ -303,9 +356,12 @@
 				C6183BC317F90FF40039F452 /* VWWPowerStripViewController.m in Sources */,
 				C6183BC617F910070039F452 /* VWWConnectViewController.m in Sources */,
 				C6095AD117F8F1B30008CFB4 /* main.m in Sources */,
+				C6183BDA17F9261D0039F452 /* VWWPowerStripTableViewCell.m in Sources */,
 				C6095AD517F8F1B30008CFB4 /* VWWAppDelegate.m in Sources */,
 				C6183BCB17F9105A0039F452 /* VWWBLEController.m in Sources */,
 				C6183BC017F90F8D0039F452 /* BLE.m in Sources */,
+				C6183BD517F9184A0039F452 /* NSTimer+Blocks.m in Sources */,
+				C6183BD017F9141C0039F452 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BLEPowerStrip/BLEPowerStrip-Prefix.pch";
 				INFOPLIST_FILE = "BLEPowerStrip/BLEPowerStrip-Info.plist";
@@ -456,6 +513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BLEPowerStrip/BLEPowerStrip-Prefix.pch";
 				INFOPLIST_FILE = "BLEPowerStrip/BLEPowerStrip-Info.plist";

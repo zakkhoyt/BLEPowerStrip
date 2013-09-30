@@ -7,15 +7,22 @@
 //
 
 #import "VWWPowerStripViewController.h"
+#import "MBProgressHUD.h"
+#import "VWWBLEController.h"
+#import "VWWPowerStripKeys.h"
+#import "VWWPowerStripTableViewCell.h"
 
-@interface VWWPowerStripViewController ()
-
+@interface VWWPowerStripViewController () <VWWBLEControllerDelegate, VWWPowerStripTableViewCellDelegate>
+@property (nonatomic, strong) VWWBLEController *bleController;
+@property (weak, nonatomic) IBOutlet UILabel *rssiLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *pin4Switch;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *outlets;
 @end
 
 @implementation VWWPowerStripViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -23,16 +30,105 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	self.bleController = [VWWBLEController sharedInstance];
+    self.outlets = [@[]mutableCopy];
+    [self buildOutlets];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.bleController.delegate = self;
+    
+    self.pin4Switch.on = NO;
 }
+
+- (void)didReceiveMemoryWarning{
+    [super didReceiveMemoryWarning];
+}
+
+
+#pragma mark Private methods
+
+-(void)buildOutlets{
+    
+    for(NSInteger index = 0; index < 8; index++){
+        NSMutableDictionary *outlet = [@{kNameKey : [NSString stringWithFormat:@"Outlet %ld", index],
+                                     kIndexKey : @(index),
+                                     kStateKey : @(0)}mutableCopy];
+        
+        [self.outlets addObject:outlet];
+    }
+}
+
+
+#pragma mark IBActions
+- (IBAction)disconnectButtonTouchUpInside:(id)sender {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.50];
+    hud.labelText = @"Disconnecting from power strip...";
+
+    [self.bleController disconnectWithCompletionBlock:^(BOOL success, NSError *error) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+}
+
+//- (IBAction)pin4SwitchValueChanged:(UISwitch*)sender {
+//    [self.bleController setDigitalState:sender.on ? 0x01 : 0x00 forPin:0x04];
+//}
+
+#pragma mark UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.outlets.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    VWWPowerStripTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VWWPowerStripTableViewCell"];
+    cell.outlet = self.outlets[indexPath.row];
+    cell.delegate = self;
+    return cell;
+}
+
+
+
+
+
+
+
+#pragma mark VWWBLEControllerDelegate
+-(void)bleControllerDidConnect:(VWWBLEController*)sender success:(BOOL)success{
+    if(success){
+        
+    }
+    else{
+        
+    }
+}
+-(void)bleControllerDidDisconnect:(VWWBLEController*)sender{
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+-(void)bleController:(VWWBLEController*)sender didUpdateRSSI:(NSNumber*)rssi{
+    self.rssiLabel.text = [NSString stringWithFormat:@"Signal strength: %ld", (NSInteger)rssi.floatValue];
+}
+-(void)bleController:(VWWBLEController*)sender didReceiveData:(NSString*)data{
+    
+}
+
+#pragma mark VWWPowerStripTableViewCellDelegate <NSObject>
+-(void)powerStripTableViewCell:(VWWPowerStripTableViewCell*)sender switchChangedState:(BOOL)on{
+    NSMutableDictionary *outlet = sender.outlet;
+    NSInteger state = ((NSNumber*)outlet[kStateKey]).integerValue;
+    NSInteger pin = ((NSNumber*)outlet[kIndexKey]).integerValue;
+    [self.bleController setDigitalState:state forPin:pin];
+}
+
+
 
 @end
