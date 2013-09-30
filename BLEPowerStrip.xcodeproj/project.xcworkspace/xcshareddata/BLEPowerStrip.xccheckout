@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>42B95968-61C9-4029-815A-FAB994459570</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BLEPowerStrip</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AF8657B1-D24F-44B9-A0CE-FB2B5C3E6E08</key>
+		<string>ssh://github.com/zakkhoyt/BLEPowerStrip.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BLEPowerStrip.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AF8657B1-D24F-44B9-A0CE-FB2B5C3E6E08</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/zakkhoyt/BLEPowerStrip.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AF8657B1-D24F-44B9-A0CE-FB2B5C3E6E08</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AF8657B1-D24F-44B9-A0CE-FB2B5C3E6E08</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BLEPowerStrip</string>
+		</dict>
+	</array>
+</dict>
+</plist>
